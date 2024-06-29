@@ -1,0 +1,38 @@
+(define (get-divisors x divisors i)
+  (if (= i 0)
+      divisors
+      (if (= (modulo x i) 0)
+          (get-divisors x (append divisors (list i)) (- i 1))
+          (get-divisors x divisors (- i 1)))))
+
+(define (between a b)
+  (let loop ((i 2))
+    (if (<= i (quotient (quotient a b) 2))
+        (if (= (modulo (quotient a b) i) 0)
+            #f
+            (loop (+ i 1)))
+        #t)))
+
+(define (display-graph dividers len)
+  (begin
+    (display "graph{\n")
+    (let loop ((i 0))
+      (if (< i len)
+          (begin
+            (display (string-append "\t" (number->string (list-ref dividers i)) "\n"))
+            (loop (+ i 1)))))
+    (let loop ((i 0))
+      (if (< i len)
+          (begin
+            (let loop2 ((j (+ i 1)))
+              (if (< j len)
+                  (begin
+                    (if (and (= (modulo (list-ref dividers i) (list-ref dividers j)) 0) (between (list-ref dividers i) (list-ref dividers j)))
+                        (display (string-append "\t" (number->string (list-ref dividers i)) " -- " (number->string (list-ref dividers j)) "\n")))
+                    (loop2 (+ j 1)))))
+            (loop (+ i 1)))))
+    (display "}")))
+
+(define n (read))
+(define dividers (get-divisors n '() n))
+(display-graph dividers (length dividers))

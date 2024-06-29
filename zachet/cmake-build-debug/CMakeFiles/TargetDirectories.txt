@@ -1,0 +1,3 @@
+/home/vlad/Discrete_math/zachet/cmake-build-debug/CMakeFiles/zachet.dir
+/home/vlad/Discrete_math/zachet/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vlad/Discrete_math/zachet/cmake-build-debug/CMakeFiles/rebuild_cache.dir

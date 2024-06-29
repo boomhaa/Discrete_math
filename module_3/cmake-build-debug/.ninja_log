@@ -1,0 +1,9 @@
+# ninja log v5
+0	366	1719472975278149305	CMakeFiles/module_3.dir/visMealy.cpp.o	c80c37a15bfa46b6
+2	420	1719444582679447847	CMakeFiles/module_3.dir/main.cpp.o	fa3f29cc76580506
+2	1100	1719583676466231864	CMakeFiles/module_3.dir/minMealy.cpp.o	ee3cc7f61aaf6914
+1	23	1719588009299467549	build.ninja	1fc75c72a6c3c9d5
+1	797	1719479121811473060	CMakeFiles/module_3.dir/langMealy.cpp.o	24ba5f21428fa6bd
+798	850	1719587190638332887	module_3	c7521075c56ad9ac
+1	976	1719545961047433445	CMakeFiles/module_3.dir/eqMealy.cpp.o	2e7983cae0610cdc
+1	798	1719587190586331087	CMakeFiles/module_3.dir/help.cpp.o	e18e3e8701cf3008
