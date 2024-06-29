@@ -1,3 +1,0 @@
-/home/vlad/Discrete_math/module_3/cmake-build-debug/CMakeFiles/module_3.dir
-/home/vlad/Discrete_math/module_3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/vlad/Discrete_math/module_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
